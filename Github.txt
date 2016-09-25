@@ -1,0 +1,17 @@
+sudo apt-get install git
+
+git config --global user.name "desve"
+git config --global user.email "2901243@mail.ru"
+
+git init urfin_bot
+
+Initialized empty Git repository in /home/ubuntu/workspace/urfin_bot/.git/
+
+git add .  
+git add README
+git commit -m 'v.0.0.5'
+git remote add origin https://github.com/desve/.git
+# git remote add origin https://github.com/user_name/Mytest.git
+sudo git push -u origin master
+Username for 'https://github.com': <desve>
+Password for 'https://desve@github.com': <Git1965>

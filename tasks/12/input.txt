@@ -1,0 +1,5 @@
+Пишем в файл input.txt
+
+qwert
+asdf
+zxc
