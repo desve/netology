@@ -1,17 +1,22 @@
 sudo apt-get install git
-
 git config --global user.name "desve"
 git config --global user.email "2901243@mail.ru"
+git init
+# Initialized empty Git repository in /home/ubuntu/workspace/urfin_bot/.git/
 
-git init urfin_bot
 
-Initialized empty Git repository in /home/ubuntu/workspace/urfin_bot/.git/
-
-git add .  
-git add README
-git commit -m 'v.0.0.5'
-git remote add origin https://github.com/desve/.git
-# git remote add origin https://github.com/user_name/Mytest.git
-sudo git push -u origin master
+git add .                      # добавляем
+git add README                 # пишем комментарий
+git commit -m 'v.0.0.5'        # закрепляем изменения
+# git remote add origin https://github.com/desve/urfin_bot.git     # задаем путь origin
+sudo git push origin master    # толкаем изменения на github
+# sudo git push -f origin master                # force updates
 Username for 'https://github.com': <desve>
 Password for 'https://desve@github.com': <Git1965>
+
+
+
+# Проверить соотношение имени и url
+git remote -v    # показывает все репозитарии
+origin  https://github.com/desve/urfin_bot.git (fetch)
+origin  https://github.com/desve/urfin_bot.git (push)
