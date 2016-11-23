@@ -11,8 +11,8 @@ git commit -m 'v.0.0.5'        # закрепляем изменения
 # git remote add origin https://github.com/desve/urfin_bot.git     # задаем путь origin
 sudo git push origin master    # толкаем изменения на github
 # sudo git push -f origin master                # force updates
-Username for 'https://github.com': <desve>
-Password for 'https://desve@github.com': <Git1965>
+Username for 'https://github.com': <_________>
+Password for 'https://desve@github.com': <_________>
 
 
 
