@@ -2,21 +2,27 @@ sudo apt-get install git
 git config --global user.name "desve"
 git config --global user.email "2901243@mail.ru"
 git init
-# Initialized empty Git repository in /home/ubuntu/workspace/urfin_bot/.git/
+# Initialized empty Git repository in /home/ubuntu/workspace/tasks/.git/
 
-
-git add .                      # добавляем
-git add README                 # пишем комментарий
-git commit -m 'v.0.0.5'        # закрепляем изменения
-# git remote add origin https://github.com/desve/urfin_bot.git     # задаем путь origin
-sudo git push origin master    # толкаем изменения на github
-# sudo git push -f origin master                # force updates
-Username for 'https://github.com': <_________>
-Password for 'https://desve@github.com': <_________>
-
+удаление origin
+git remote rm origin
 
 
 # Проверить соотношение имени и url
 git remote -v    # показывает все репозитарии
 origin  https://github.com/desve/urfin_bot.git (fetch)
 origin  https://github.com/desve/urfin_bot.git (push)
+
+
+echo "# netology" >> README.md
+git init
+sit add .
+git add README.md
+git commit -m "Занятие 1.7. Файлы. Файловая система"
+git remote add netology git@github.com:desve/netology.git
+git push -u netology master
+
+
+PyYAML-3.12.tar
+
+tar -xvzf PyYAML-3.12.tar.gz
