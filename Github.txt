@@ -16,9 +16,9 @@ origin  https://github.com/desve/urfin_bot.git (push)
 
 echo "# netology" >> README.md
 git init
-sit add .
+git add .
 git add README.md
-git commit -m "Занятие 1.7. Файлы. Файловая система"
+git commit -m "Занятие 2.1. Открытие и чтение файла, запись в файл"
 git remote add netology git@github.com:desve/netology.git
 git push -u netology master
 
