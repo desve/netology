@@ -135,5 +135,3 @@ while True:
     functions_input = {'j': input_j, 'y': input_y, 'c': input_c, 'x': input_x,
                        'e': input_e}
     functions_input.get(user_input, input_error)(countries) 
-    
-

@@ -19,7 +19,7 @@ git init
 git add .
 git add README.md
 git commit -m "Занятие 2.1. Открытие и чтение файла, запись в файл"
-sudo git remote add netology https://github.com/desve/netology
+
 sudo git push netology master
 git push -u netology 
 sudo git push -f netology master                # force updates
