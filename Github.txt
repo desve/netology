@@ -18,7 +18,7 @@ echo "# netology" >> README.md
 git init
 git add .
 git add README.md
-git commit -m "Занятие 2.2. Кодировки, Кракозябры и Кириллица"
+git commit -m "Занятие 2.3. Работа с файлами, путями"
 
 sudo git push netology master
 git push -u netology 
