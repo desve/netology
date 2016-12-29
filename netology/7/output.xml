@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<root>
+	<Switzerland type="dict">
+		<average_temperature type="str">20</average_temperature>
+		<sea type="str">False</sea>
+		<currency_rate type="str">66.17</currency_rate>
+		<the_rate_per_day type="str">3292</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</Switzerland>
+	<Brazil type="dict">
+		<average_temperature type="str">25</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">19.25</currency_rate>
+		<the_rate_per_day type="str">964</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</Brazil>
+	<Japan type="dict">
+		<average_temperature type="str">15</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">0.61</currency_rate>
+		<the_rate_per_day type="str">31</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</Japan>
+	<Thailand type="dict">
+		<average_temperature type="str">30</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">1.8</currency_rate>
+		<the_rate_per_day type="str">90</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</Thailand>
+	<Germany type="dict">
+		<average_temperature type="str">5</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">80</currency_rate>
+		<the_rate_per_day type="str">4000</the_rate_per_day>
+		<schengen type="str">True</schengen>
+	</Germany>
+	<China type="dict">
+		<average_temperature type="str">20</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">9.67</currency_rate>
+		<the_rate_per_day type="str">484</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</China>
+	<Hungary type="dict">
+		<average_temperature type="str">10</average_temperature>
+		<sea type="str">False</sea>
+		<currency_rate type="str">0.3</currency_rate>
+		<the_rate_per_day type="str">15</the_rate_per_day>
+		<schengen type="str">True</schengen>
+	</Hungary>
+	<Australia type="dict">
+		<average_temperature type="str">30</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">49.96</currency_rate>
+		<the_rate_per_day type="str">2500</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</Australia>
+	<USA type="dict">
+		<average_temperature type="str">18</average_temperature>
+		<sea type="str">True</sea>
+		<currency_rate type="str">65.84</currency_rate>
+		<the_rate_per_day type="str">3292</the_rate_per_day>
+		<schengen type="str">False</schengen>
+	</USA>
+</root>

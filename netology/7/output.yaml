@@ -1,0 +1,16 @@
+Australia: {average_temperature: 30, currency_rate: 49.96, schengen: false, sea: true,
+  the_rate_per_day: 2500}
+Brazil: {average_temperature: 25, currency_rate: 19.25, schengen: false, sea: true,
+  the_rate_per_day: 964}
+China: {average_temperature: 20, currency_rate: 9.67, schengen: false, sea: true,
+  the_rate_per_day: 484}
+Germany: {average_temperature: 5, currency_rate: 80, schengen: true, sea: true, the_rate_per_day: 4000}
+Hungary: {average_temperature: 10, currency_rate: 0.3, schengen: true, sea: false,
+  the_rate_per_day: 15}
+Japan: {average_temperature: 15, currency_rate: 0.61, schengen: false, sea: true,
+  the_rate_per_day: 31}
+Switzerland: {average_temperature: 20, currency_rate: 66.17, schengen: false, sea: false,
+  the_rate_per_day: 3292}
+Thailand: {average_temperature: 30, currency_rate: 1.8, schengen: false, sea: true,
+  the_rate_per_day: 90}
+USA: {average_temperature: 18, currency_rate: 65.84, schengen: false, sea: true, the_rate_per_day: 3292}
