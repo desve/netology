@@ -18,7 +18,7 @@ echo "# netology" >> README.md
 git init
 git add .
 git add README.md
-git commit -m "Занятие 2.3. Работа с файлами, путями"
+git commit -m "«Открытие и чтение файла, запись в файл»"
 
 sudo git push netology master
 git push -u netology 
