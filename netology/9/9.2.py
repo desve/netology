@@ -1,54 +1,60 @@
-from urllib import request
-import re
+#!/usr/bin/python3
+# -*- coding: utf-8 -*- 
+
+import glob
+import os
+import os.path
+import codecs
+
+# Определяем где мы находимся
+PATH = os.getcwd()
 
 print('Из какой папки будем парсить файлы?')
 print('1 - Migrations 2 - Advanced Migrations')
+
 while True:
     var = input()
     if  var == '1':
-        PATH = 'https://github.com/jmistx/Python_course/tree/master/Lesson_2.4/homework/Migrations/'   
+# Переходим в папку Migrations
+        os.chdir(PATH + '/Migrations')
         break
     elif var == '2':
-        PATH = 'https://github.com/jmistx/Python_course/tree/master/Lesson_2.4/homework/Advanced%20Migrations/'
+        os.chdir(PATH + '/Advanced Migrations')
         break
     else:
+        False
         print('необходимо ввести 1 или 2')
-print('Парсим .sql файлы из папки ', PATH)
 
-# Парсим
-html = request.urlopen(PATH).read().decode('utf-8')
+# Сохраняем имена всех .sql файлов
+sql_files = glob.glob('*.sql')
+print('Всего найдено %s .sql файлов' % len(sql_files))
 
-# Выбираем имена всех файлов
-file_names = re.findall('/Migrations/(.*)" class="js-navigation-open' , html)
-
-numder_files = len(file_names)
-print('Всего найдено файлов', numder_files)
-
-# Выбираем из найденных файлов только .sql             
-file_names = list(filter(lambda file_names: file_names.rfind('.sql',
-                         len(file_names)-4, len(file_names)) > 0, 
-                         file_names))                   
-numder_sql_files = len(file_names)                             
-print('Из них  %s .sql файлов' % numder_sql_files)
-
-sql_files = []
+files = []
 while True:
+    print('Рассматриваем %s файллов' % len(sql_files))
     print('введите запрос для парсинга')
     user_input = str(input())
-    for i in range(50):
-        file = file_names[i]
-        path_file = PATH + file
-#    print(i, path_file)
-        try:
-            sql_file = request.urlopen(path_file).read().decode('utf-8')
-            if sql_file.find(user_input) > 0:
-                print('в файле %s запрос %s найден' % (file, user_input))
-                sql_files.append(file)
+# INSERT
+# APPLICATION_SETUP 
+# A400M
+# 0.0
+# 2.0
+    for file in sql_files:
+        print('Рассматриваем файл', file) 
+        try:        
+            file_encoding = 'utf-8'
+            with codecs.open(file, encoding = file_encoding) as new_file:
+                info = new_file.read()
         except:
-            print('файл %s не удается обработать' % file)
-        
-    print('%s файлов отвечают заданному запросу' % len(sql_files))
-# Сохраняем новый вписок файлов обратно в file_names
-    sql_files, file_names = [], sql_files
-
-       
+            file_encoding = 'koi8-r'
+            with codecs.open(file, encoding = file_encoding) as new_file:
+                info = new_file.read()
+        if info.find(user_input) > 0:
+            files.append(file)
+            print('В файле %s подстрока %s найдена' % (file, user_input)) 
+        else:
+            print('В файле %s подстрока %s не найдена' % (file, user_input))                 
+    print('В %s файлах содержится подстрока %s' % (len(files), user_input))
+    
+    files, sql_files = [], files
+    
