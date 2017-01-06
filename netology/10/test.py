@@ -1,6 +1,24 @@
-file_name_input = 'trump_mug.jpg'
-file_name_output = '1.jpg'
+import subprocess
+import os
+import os.path
+import glob
 
-print('convert %s -resize 200 %s' % (file_name_input, file_name_output))
+# Определяем наше местоположение на диске
+PATH = os.getcwd()
+print(PATH)
 
-# convert trump_mug.jpg -resize 200 1.jpg
+# Определяем откуда брать файлы
+file_path_input = os.path.join(PATH, 'Source')
+# Переходим к папке с исходными фото 
+os.chdir(file_path_input)
+# Создаем список, имеющихся там файлов
+files = glob.glob('*.jpg')
+
+# Создаем деректорию для обработанных фото
+os.mkdir(os.path.join(PATH, 'Result'))
+
+# Извлекаем файлы и обрабатываем их
+for file in files:
+    file_path_output = os.path.join(PATH, 'Result', file)
+    command = 'convert ' + file + ' -resize 200 ' + file_path_output
+    go = subprocess.call(command, shell=True)

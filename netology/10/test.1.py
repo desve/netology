@@ -1,12 +1,3 @@
-# sudo apt-get update
-# sudo apt-get install imagemagick
-
-import subprocess
-import os
-import os.path
-import glob
-
-# Определяем наше местоположение на диске
 import subprocess
 import os
 import os.path
@@ -46,7 +37,4 @@ for file in files:
 if __name__ == '__main__':
     with Pool(4) as p:
         p.map(file_convert, files)
-
-
-
 

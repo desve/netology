@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*- 
 
+# Занятие 2.2. Кодировки, Кракозябры и Кириллица
+
 def input_json_1(file_name, file_encoding):    
 # Парсинг .json
     import codecs

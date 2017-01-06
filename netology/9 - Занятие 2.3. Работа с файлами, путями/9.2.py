@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*- 
 
+# Занятие 2.3. Работа с файлами, путями
+
 import glob
 import os
 import os.path
@@ -22,7 +24,6 @@ while True:
         os.chdir(PATH + '/Advanced Migrations')
         break
     else:
-        False
         print('необходимо ввести 1 или 2')
 
 # Сохраняем имена всех .sql файлов
