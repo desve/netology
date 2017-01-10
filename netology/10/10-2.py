@@ -1,6 +1,8 @@
 # sudo apt-get update
 # sudo apt-get install imagemagick
 
+# Занятие 2.4. Вызов внешних программ
+
 import subprocess
 import os
 import os.path
