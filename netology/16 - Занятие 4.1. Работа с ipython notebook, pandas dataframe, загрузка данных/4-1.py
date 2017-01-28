@@ -17,19 +17,19 @@ def input_years():
         years.append(year)
     return years
 
-def path_to_file():
+def path_to_file(years):
 # Находим пути к файлам
     global PATH
     file_path = []
     for year in years:
 # Задаем путь к файлу с данными
-        file_path.append(PATH + '/names/' + 'yob' + str(year) + '.txt')
+        file_path.append(PATH + '/names/yob{}.txt'.format(year))
     return file_path
 
 def common_frame(years):
 # Строим общий фрейм данных
 # Находим пути к нужным файлам
-    file_path = path_to_file()
+    file_path = path_to_file(years)
     for order, year in enumerate(years):
         if order == 0:
             frame_names = pd.read_csv(file_path[order], names=['Name', 'Gender', 'Count'])
@@ -79,9 +79,10 @@ global PATH
 PATH = os.getcwd()
 
 # Выводим top-3 популярных имен
-print('Список популярных имен')
+print('Список популярных имен Top-3')
 print(count_top_3(years))
 
 # Выводим динамику изменения количества имен за указанные года в разрезе полов
 print('Словарь динами иизменения количества имен за указанные года в разрезе полов')
 print(count_dynamics(years))
+
